@@ -1,21 +1,26 @@
 function saveOptions(e) {
     e.preventDefault();
     browser.storage.sync.set({
-        value: document.querySelector("#master-password").value
+        value: document.getElementById("#master-password").value
     });
+
+    console.log("dd"+document.getElementById("#master-password").value);
+
 }
 
 function restoreOptions() {
 
     function setCurrentChoice(result) {
-        document.querySelector("#master-password").value = result.color || "blue";
+        console.log(result);
+
+        document.getElementById("#master-password").value = result;
     }
 
     function onError(error) {
         console.log('Error: ' + error);
     }
 
-    var getting = browser.storage.sync.get("color");
+    var getting = browser.storage.sync.get("value");
     getting.then(setCurrentChoice, onError);
 }
 
