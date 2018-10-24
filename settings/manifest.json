@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "WebsiteBlocker",
+  "name": "Website Blocker",
   "version": "1.0",
-  "description": "Block websites with the use of a master password",
+  "description": "Block websites with password protection",
   "icons": {
     "48": "icons/block.png"
   },
@@ -12,21 +12,13 @@
         "<all_urls>"
       ],
       "js": [
-        "js/blocker.js"
-      ],
-      "js": [
-        "js/settings.js"
+        "settings.js"
       ]
     }
   ],
   "permissions": [
     "storage"
   ],
-  "background": {
-    "scripts": [
-      "js/setting.js"
-    ]
-  },
   "options_ui": {
     "page": "options.html"
   },
