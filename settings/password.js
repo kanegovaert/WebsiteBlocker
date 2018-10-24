@@ -7,7 +7,7 @@ function onGot(item) {
     if (item.value) {
         value = item.value;
     }
-    document.getElementById("#master-password").value = value;
+    document.getElementById("master-password").innerHTML = value;
 }
 
 var getting = browser.storage.sync.get("value");

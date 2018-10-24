@@ -1,18 +1,16 @@
 function saveOptions(e) {
-    console.log("aaa")
     e.preventDefault();
     browser.storage.sync.set({
-        value: document.getElementById("#master-password").value
+        value: document.getElementById("master-password").value
     });
     console.log(value);
     console.log("aaa")
-    console.log("dd" + document.getElementById("#master-password").value);
+    console.log("dd" + document.getElementById("master-password").value);
 }
 
 function restoreOptions() {
     function setCurrentChoice(result) {
-        console.log(result);
-        document.getElementById("#master-password").value = result;
+        document.getElementById("master-password").value = result.value;
     }
 
     function onError(error) {
