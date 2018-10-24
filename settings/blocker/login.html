@@ -11,12 +11,13 @@
 
     <div class="login">
         <img src="profile.png"><br>
-        <input type="password" id="password" name="Password" value="Password" onkeypress="memSort(event)">
+        <input type="password" id="password" name="Password" value="Password" onkeypress="memSort(event)"><br>
+        <button>Login</button>
     </div>
 
 
 <script>
-    function memSort(e){
+    function memSort(event){
         var key=e.keyCode || e.which;
         if (key==13){
             alert("Enter was pressed ");

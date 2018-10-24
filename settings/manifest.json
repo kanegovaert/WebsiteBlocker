@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Block websites with password protection",
   "icons": {
-    "48": "icons/block.png"
+    "48": "block.png"
   },
   "content_scripts": [
     {
