@@ -1,40 +1,35 @@
 {
-
   "manifest_version": 2,
   "name": "WebsiteBlocker",
   "version": "1.0",
-
   "description": "Block websites with the use of a master password",
-
   "icons": {
     "48": "icons/block.png"
   },
-
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["js/blocker.js"],
-      "js": ["js/settings.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/blocker.js"
+      ],
+      "js": [
+        "js/settings.js"
+      ]
     }
   ],
-
   "permissions": [
-    "*options.html",
-    "webRequest",
-    "browser",
-    "browser.*",
-    "chrome/*",
     "storage"
   ],
-
   "background": {
-    "scripts": ["js/setting.js"]
+    "scripts": [
+      "js/setting.js"
+    ]
   },
-
   "options_ui": {
     "page": "options.html"
   },
-
   "applications": {
     "gecko": {
       "id": "contact@kanegovaert.com"
