@@ -10,7 +10,7 @@ body {
     background-size: auto;
 }
 
-.login {margin: 260px 0px 50% 45%;}
+.login {margin: 18% 0px 50% 45%;}
 
 .login img {
     width: 13%;
@@ -25,4 +25,6 @@ body {
     background-color: black;
     padding: 7px 20px;
     color: greenyellow;
+    margin-left: -27px;
 }
+
