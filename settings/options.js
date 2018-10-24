@@ -3,9 +3,6 @@ function saveOptions(e) {
     browser.storage.sync.set({
         value: document.getElementById("master-password").value
     });
-    console.log(value);
-    console.log("aaa")
-    console.log("dd" + document.getElementById("master-password").value);
 }
 
 function restoreOptions() {
